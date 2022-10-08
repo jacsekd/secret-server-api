@@ -1,0 +1,4 @@
+RewriteEngine ON
+
+RewriteRule ^secret/(.*)$ api/secret_get_one.php?hash=$1
+RewriteRule ^secret$ api/secret_create_one.php
